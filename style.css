@@ -1,0 +1,438 @@
+/* ... (Mantenha o resto do CSS anterior, como reset, body, navbar, etc.) ... */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo temático Clash Royale */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    background: linear-gradient(130deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 38%, rgba(255, 0, 0, 1) 93%);
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Navbar fixo */
+
+.logo-header{
+    width: 140px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 106, 255, 0.8);
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ffd700;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffd700;
+}
+
+/* Container geral */
+.container {
+    max-width: 1200px;
+    margin: 0 50% 0 10%;
+    padding: 0 1rem;
+}
+
+/* Seção Hero (Home) */
+
+.container-hero{
+    margin-top: 8%
+}
+
+.hero {
+    padding: 8rem 0 4rem; /* Espaço para navbar */
+    display: flex;
+    text-align:left;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-right: auto;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.info p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.img-clash-royale{
+    position: absolute;
+    top: 24%;
+    right: 8%;
+    width: 800px;
+    transform: rotate(10deg);
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #007bff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px; /* Arredondado */
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+/* Seção Chaveamento */
+.chaveamento {
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.chaveamento h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#form-chaveamento {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-chaveamento label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+#form-chaveamento input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+#nomes-container {
+    margin-bottom: 1rem;
+}
+
+#nomes-container input {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Bracket */
+.bracket {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.match {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+}
+
+.match:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.player {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.player:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.player.winner {
+    background: #ffd700;
+    color: #007bff;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container{
+        margin: auto;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .nav-links li {
+        margin-left: 1rem;
+    }
+    .bracket {
+        flex-direction: column;
+    }
+    .round {
+        margin: 1rem 0;
+    }
+    .img-clash-royale{
+        position: static;
+        width: 80%;
+    }
+}
+
+/* Bracket - Estrutura em colunas com linhas de conexão */
+.bracket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.round h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.match {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem; /* Espaço para linhas */
+    position: relative;
+    transition: all 0.3s;
+    min-height: 80px; /* Altura mínima para alinhamento */
+}
+
+.match:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.player {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.player:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.player.winner {
+    background: #ffd700;
+    color: #007bff;
+    font-weight: 700;
+}
+
+/* Linhas de conexão entre rodadas */
+.round:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    width: 2rem;
+    height: 2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.match::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    width: 2rem;
+    height: 2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.match::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: -2rem;
+    width: 2px;
+    height: 50%;
+    background: #fff;
+    z-index: -1;
+}
+
+/* Modal de Comemoração */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.5s;
+}
+
+.modal.show .modal-content {
+    animation: slideIn 0.5s;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #007bff, #ffd700);
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.confete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confete::before,
+.confete::after {
+    content: '🎉✨🎊';
+    position: absolute;
+    font-size: 2rem;
+    animation: confeteFall 3s linear infinite;
+}
+
+.confete::before {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.confete::after {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.player.bye {
+    background: rgba(0, 255, 0, 0.3); /* Verde claro para indicar bye */
+    cursor: default;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes confeteFall {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(100vh); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bracket {
+        flex-direction: column;
+    }
+    .round {
+        margin: 1rem 0;
+    }
+    .round:not(:last-child)::after,
+    .match::before,
+    .match::after {
+        display: none; /* Ocultar linhas em mobile para simplicidade */
+    }
+}

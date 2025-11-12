@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaveamento - Campeonato de Clash Royale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Fixo -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="./Logo fundo transparente.png" class="logo-header" alt="Logo Super Geeks">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chaveamento.html" class="active">Chaveamento</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página de Chaveamento -->
+    <section class="chaveamento">
+        <div class="container">
+            <h2>Gerar Chaveamento</h2>
+            <form id="form-chaveamento">
+                <label for="num-competidores">Número de Competidores (2 a 32):</label>
+                <input type="number" id="num-competidores" min="2" max="32" value="4" required>
+                <div id="nomes-container">
+                    <!-- Campos de nomes serão gerados dinamicamente aqui -->
+                </div>
+                
+                <button type="submit" class="btn">Gerar Chaveamento</button>
+            </form>
+            <div class="img-clash-div">
+                <img src="./Clash-Royale-logo.png" class="img-clash-royale" alt="Logo Clash Royale">
+            </div>
+            <div id="bracket-container" class="bracket">
+                <!-- O chaveamento será renderizado aqui -->
+            </div>
+        </div>
+    </section>
+    <div id="modal-comemoracao" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🎉 Campeão! 🎉</h2>
+            <p id="mensagem-campeao"></p>
+            <div class="confete"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- Adicione isso logo antes de </body> -->
+
+</body>
+</html>
