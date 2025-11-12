@@ -16,7 +16,7 @@
 
 **Opção 2:** Sábado, das 09:00 às 11:00
 
-*(A definir com os coordenadores do evento)*
+*(A definir)*
 
 ---
 
@@ -32,7 +32,7 @@
 - Recepção dos participantes
 - Confirmação de presença e registro de todos os jogadores
 - Verificação de nicks/tags do Clash Royale
-- Distribuição de senhas para acesso ao chaveamento (se aplicável)
+- Distribuição de senhas para acesso ao chaveamento
 
 **Sorteio do Chaveamento (10 minutos)**
 - Realização do sorteio aleatório para definir os confrontos
@@ -49,25 +49,23 @@
 
 ### **ETAPA 2: Campeonato (1 hora e 30 minutos)**
 
+- Possível transmissão/projeção das partidas
+
 **Objetivo:** Realização das partidas eliminatórias até definir o campeão.
 
 #### Estrutura Sugerida:
 
 **Fase de Grupos ou Oitavas/Quartas (40-50 minutos)**
 - Início das primeiras rodadas eliminatórias
-- Partidas simultâneas quando possível
 - Acompanhamento por coordenadores para resolver problemas técnicos
 - Registro de resultados em tempo real
 
 **Semifinais (20-25 minutos)**
 - Confrontos entre os 4 melhores classificados
-- Possível transmissão/projeção das partidas principais
-- Clima de maior tensão e competitividade
 
 **Final e Decisão de 3° Lugar (20-25 minutos)**
 - Grande final entre os 2 finalistas
-- Disputa do 3° lugar (opcional, se o tempo permitir)
-- Transmissão/projeção recomendada
+- Disputa do 3° lugar
 
 **Premiação e Encerramento (5-10 minutos)**
 - Anúncio dos vencedores
@@ -81,14 +79,8 @@
 
 **Tempo de Partida no Duelo:** Considere que partidas de Duelo podem durar entre 8-15 minutos. Planeje o número de participantes de acordo com o tempo disponível.
 
-**Sugestão de Número de Participantes:** Para 1h30 de campeonato, o ideal é trabalhar com 8 a 16 participantes para garantir que todas as fases sejam concluídas confortavelmente.
+**Sugestão de Número de Participantes:** Para 1h30 de campeonato, o ideal é trabalhar com 6 a 12 participantes para garantir que todas as fases sejam concluídas confortavelmente.
 
-**Equipe de Coordenação:** Tenha pelo menos 2-3 coordenadores para auxiliar em questões técnicas, resolver disputas e gerenciar o tempo.
-
-**Regras Claras:** Defina previamente regras sobre desconexões, empates, cartas permitidas e níveis máximos (se aplicável).
+**Regras Claras:** Defina previamente regras sobre desconexões.
 
 **Backup de Tempo:** Reserve os últimos 10 minutos como margem de segurança para imprevistos.
-
----
-
-Boa sorte com o campeonato! 🏆
