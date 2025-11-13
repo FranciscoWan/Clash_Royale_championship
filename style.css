@@ -11,7 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: #000000;
-    background: linear-gradient(130deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 38%, rgba(255, 0, 0, 1) 93%);
+    background: linear-gradient(130deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 38%, #EF2E2F 93%);
     color: #fff;
     min-height: 100vh;
     position: relative;
@@ -80,7 +80,7 @@ body {
 /* Seção Hero (Home) */
 
 .container-hero{
-    margin-top: 8%
+    margin-top: 4%
 }
 
 .hero {
@@ -93,6 +93,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 .hero p {
@@ -102,40 +103,68 @@ body {
     margin-right: auto;
 }
 
-.info {
-    margin-bottom: 2rem;
-}
-
 .info p {
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
-.img-clash-royale{
-    position: absolute;
-    top: 24%;
-    right: 8%;
-    width: 800px;
-    transform: rotate(10deg);
+.info{
+    margin-bottom: 2.5rem;
 }
 
-/* Botão */
+/* ---- Logo clash royale --- */
+
+div .card {
+    position: fixed;
+    top: 16%;
+    right: 4%;
+    padding: 0;
+    
+    border-radius: 10px;
+    object-fit: cover;
+    
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+}
+
+.card:hover {
+    transition-duration: 150ms;
+}
+
+
+
+.img-clash-royale{
+    width: 760px;
+}
+
+/* ---- Botão ---- */
+
+.div-btn{
+    display: flex;
+    gap: 20px;
+}
+
 .btn {
     display: inline-block;
-    background: #ffd700;
-    color: #007bff;
+    border: 2px solid white;
+    background: #EF2E2F;
+    color: white;
+    width: 180px;
+    text-align: center;
     padding: 0.75rem 1.5rem;
     border-radius: 50px; /* Arredondado */
     text-decoration: none;
     font-weight: 700;
     transition: all 0.3s;
-    border: none;
     cursor: pointer;
 }
 
 .btn:hover {
     background: #fff;
-    transform: scale(1.05);
+    color: black;
+    transform: scale(1.1);
 }
 
 /* Seção Chaveamento */
