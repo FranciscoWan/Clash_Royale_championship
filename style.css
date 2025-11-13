@@ -14,6 +14,7 @@ body {
     background: linear-gradient(130deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 38%, #EF2E2F 93%);
     color: #fff;
     min-height: 100vh;
+    min-width: 100vw;
     position: relative;
     overflow-x: hidden;
 }
@@ -249,31 +250,59 @@ div .card {
 }
 
 .player.winner {
-    background: #ffd700;
-    color: #007bff;
+    background: #EF2E2F;
+    color: #fff;
     font-weight: 700;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+
     .container{
         margin: auto;
+        padding: 2rem 1rem;
     }
+
+    .hero{
+        padding: 5rem 0;
+    }    
     .hero h2 {
         font-size: 2rem;
     }
     .nav-links li {
         margin-left: 1rem;
     }
+
+    .info{
+        margin-bottom: 0.5rem;
+    }
+
+    div .card{
+        position: static;
+        top: auto;
+        right: auto;
+    }
+
+    .img-clash-div{
+        display: flex;
+        justify-content: center;        
+    }
+
+    .div-btn{
+        justify-content: center;
+    }
+
     .bracket {
         flex-direction: column;
     }
+
     .round {
         margin: 1rem 0;
     }
+
     .img-clash-royale{
         position: static;
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -326,8 +355,8 @@ div .card {
 }
 
 .player.winner {
-    background: #ffd700;
-    color: #007bff;
+    background-color: rgb(0, 255, 0, 0.3);
+    color: #fff;
     font-weight: 700;
 }
 
@@ -383,7 +412,7 @@ div .card {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #007bff, #ffd700);
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.686), #fff);
     margin: 15% auto;
     padding: 2rem;
     border-radius: 10px;
@@ -391,7 +420,7 @@ div .card {
     max-width: 500px;
     text-align: center;
     position: relative;
-    color: #fff;
+    color: black;
 }
 
 .close {
@@ -410,14 +439,6 @@ div .card {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
-}
-
-.confete::before,
-.confete::after {
-    content: '🎉✨🎊';
-    position: absolute;
-    font-size: 2rem;
-    animation: confeteFall 3s linear infinite;
 }
 
 .confete::before {
