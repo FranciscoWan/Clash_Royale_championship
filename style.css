@@ -118,7 +118,7 @@ body {
 div .card {
     position: fixed;
     top: 16%;
-    right: 4%;
+    right: 5%;
     padding: 0;
     
     border-radius: 10px;
@@ -134,10 +134,8 @@ div .card {
     transition-duration: 150ms;
 }
 
-
-
 .img-clash-royale{
-    width: 760px;
+    width: 800px;
 }
 
 /* ---- Botão ---- */
@@ -172,6 +170,7 @@ div .card {
 .chaveamento {
     padding: 8rem 0 4rem;
     text-align: center;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 .chaveamento h2 {
@@ -192,12 +191,27 @@ div .card {
     font-weight: 500;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+
+input #num-competidores{
+    width: 185px;
+}
+
 #form-chaveamento input {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 4px;
     border: none;
-    width: 100%;
+    width: 300px;
     max-width: 300px;
 }
 
@@ -208,8 +222,16 @@ div .card {
 #nomes-container input {
     display: block;
     margin-bottom: 0.5rem;
-    width: 100%;
+    width: 300px;
     max-width: 300px;
+}
+
+input{
+    outline: 2px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Bracket */
@@ -258,6 +280,10 @@ div .card {
 /* Responsividade */
 @media (max-width: 768px) {
 
+    body{
+        height: 100vh;
+    }
+    
     .container{
         margin: auto;
         padding: 2rem 1rem;
